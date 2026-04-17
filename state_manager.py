@@ -1,7 +1,8 @@
 import json
 import os
 
-ARCHIVO_ESTADO = "estado.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ARCHIVO_ESTADO = os.path.join(BASE_DIR, "estado.json")
 
 def obtener_publicados():
     if not os.path.exists(ARCHIVO_ESTADO):

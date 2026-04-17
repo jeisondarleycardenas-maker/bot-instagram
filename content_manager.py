@@ -2,7 +2,8 @@ import os
 from datetime import datetime
 from state_manager import obtener_publicados
 
-CARPETA_PRINCIPAL = "contenido"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CARPETA_PRINCIPAL = os.path.join(BASE_DIR, "contenido")
 
 
 def obtener_dia_actual():
