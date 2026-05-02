@@ -3,6 +3,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# EXISTENTE
 USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")
 INTERVALO_MINUTOS = int(os.getenv("INTERVAL_MINUTES", 60))
+
+# CLOUDINARY
+CLOUDINARY_CLOUD_NAME = os.getenv("CLOUDINARY_CLOUD_NAME")
+CLOUDINARY_API_KEY = os.getenv("CLOUDINARY_API_KEY")
+CLOUDINARY_API_SECRET = os.getenv("CLOUDINARY_API_SECRET")

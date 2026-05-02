@@ -1,2 +1,4 @@
 schedule
 python-dotenv
+requests
+cloudinary
